@@ -38,16 +38,25 @@ Explain the difference between Data Analytics, Data Science, and Artificial Inte
 **Discussion:**
 
 - "If a CEO says 'I want to build a GPT-4 for my company' but all their data is in paper files, where on the hierarchy are they failing?"
+- My Answer (27-Apr-2026): Data Logging.
 - "If we scanned those papers into PDFs, would that be enough to build an AI tomorrow? Or is there still a 'Cleaning' and 'Analysis' step missing?"
+- My Answer (27-Apr-2026): After scanning the PDFs, will need to evaluate how data can be extracted, and from these extraction, the SMEs of the business would have to analyse if the data is clean. Even if it is so, the business need to be prepared in future events where data are not read/extracted cleaned - e.g, extraction fails. Specifically on whether "Cleaning" and "Analysis" step is missing - a YES.
 
 **Activity:**
 
 1. **The Matrix:** Classify each of the following 5 scenarios as Data Analytics, Data Science, or AI — and explain your reasoning:
    - A bank system that automatically flags unusual transactions in real time
+      - My Answer (27-Apr-2026): More towards AI. This sounds more like an automated action, where research on past data to drive future prediction would have been done, and with iterations to improve the model. Could also be ongoing to make the model more robust.
    - A manager building a monthly pivot table of sales figures
+      - My Answer (27-Apr-2026): Data Analytics - looking back on historical data to generate insights.
    - A self-driving car that brakes automatically when it detects an obstacle
+      - My Answer (27-Apr-2026): AI. Similar to the bank system above, the car is a "self-driving", an automated action that is already built from past data driving future prediction.
    - A model that predicts which customers are likely to churn next quarter
+      - My Answer (27-Apr-2026): Data Science. Prediction of the future.
    - A dashboard showing last year's revenue broken down by region
+      - My Answer (27-Apr-2026): Data Analytics - looking back on historical data to generate insights.
+
+
 
 <details>
 <summary>Answer Key — The Matrix</summary>
@@ -70,6 +79,8 @@ Explain the difference between Data Analytics, Data Science, and Artificial Inte
 ### 💬 Q&A & Reflection (10 min)
 
 - Does AI replace Data Science — or depend on it?
+   - My Answer (27-Apr-2026): Depends on it. With no "prediction" model, which is where Data Science is at, AI will not be able to "predict" and make the judgement on what to do.
+
 
 <details>
 <summary>Suggested answer</summary>
@@ -79,6 +90,8 @@ AI **depends** on Data Science — it doesn't replace it. You need clean, well-u
 </details>
 
 - How does Netflix use Analytics, Data Science, and AI differently in its product?
+   - My Answer (27-Apr-2026): Data Analytics part is where likely capturing user clicks and "page" stay duration, and the categories of those clicks/pages to perform historical analysis to understand the specific user. Then, the trained "algo" is supposed to predict and suggest recommendations on "what to watch next", or "this may interest you" to hook user to continue watching or using the platform. For the two phases on the business as a whole, it could also produce business insights like pricing, production. Lastly for AI, (peeking at the given answer), would be Top 10 list, Top 10 suggestion from the prediction algo trained in Data Science phase.
+
 
 <details>
 <summary>Suggested answer</summary>
@@ -112,6 +125,12 @@ Identify the 4 stages of a Data Pipeline and distinguish between Structured, Uns
 **Scenario:** You are designing the data flow for a "Sleep Tracker" app.
 
 **Task:** Fill in the blanks below. If studying alone, write your own answers first, then check the sample responses below the table.
+- My Answer (27-Apr-2026):
+  i. Collection:  Data such as duration of sleep, heart rate during sleep are recorded.
+  ii. Cleaning: Maybe ignoring untracked data due to technical issues, or filling up mean value on missing data.
+  iii. Analysis: Informatics like sleep health can be predicted.
+  iv: Visualisation: Charts of data collection can be produced or accessed as a summary for user.
+
 
 | Pipeline Stage | What happens here? (Specific to a Smart Watch) |
 |:---|:---|
@@ -134,6 +153,8 @@ Identify the 4 stages of a Data Pipeline and distinguish between Structured, Uns
 **Discussion Question:**
 
 If the "Cleaning" stage fails (e.g., we count the time the watch was on the nightstand as "Deep Sleep"), how does that ruin the "Visualisation"?
+- My Answer (27-Apr-2026): Other than false positive or fake data, couldn't think of an alternative.
+
 
 <details>
 <summary>Suggested answer</summary>
@@ -146,13 +167,13 @@ The app would show a falsely high Sleep Score and report more "Deep Sleep" than 
 
 **Task 1:** Categorise each of the following hospital data items as Structured, Unstructured, or Semi-Structured:
 
-1. Patient Name ("John Doe")
-2. X-Ray Image (chest_scan_001.jpg)
-3. Doctor's handwritten notes on a clipboard
-4. Patient Age (34)
-5. Blood Type (O+)
-6. Audio recording of a patient consultation
-7. JSON log from a heart monitor `{"bpm": 80, "time": "12:00"}` *(Tricky!)*
+1. Patient Name ("John Doe") - Structured
+2. X-Ray Image (chest_scan_001.jpg) - Unstructured
+3. Doctor's handwritten notes on a clipboard - Unstructured
+4. Patient Age (34) - Structured
+5. Blood Type (O+) - Structured
+6. Audio recording of a patient consultation - Unstructured
+7. JSON log from a heart monitor `{"bpm": 80, "time": "12:00"}` *(Tricky!)* - Semi-Structured
 
 <details>
 <summary>Answer Key — Data Binning</summary>
@@ -172,11 +193,15 @@ The app would show a falsely high Sleep Score and report more "Deep Sleep" than 
 </details>
 
 **Question:** How can you convert Unstructured text (like a doctor's note) into Structured data? Give an example.
+- My Answer (27-Apr-2026): Didn't answer because the suggested was given in the above markdown.
+
 
 ### 💬 Q&A & Reflection (10 min)
 
 - Is JSON structured or unstructured? Where does it sit on the spectrum?
-
+   - My Answer (27-Apr-2026): Unstructured. Knowing the answer above, this is because naming of keys could differ even if they mean the same. Certain extraction could be optional for one, but mandatory for the other. Also, datatypes used may be different.
+ 
+  
 <details>
 <summary>Suggested answer</summary>
 
@@ -185,6 +210,7 @@ JSON is **semi-structured**. It has named keys and a predictable format within a
 </details>
 
 - Why do Data Scientists reportedly spend ~80% of their time in the Cleaning stage?
+   - My Answer (27-Apr-2026): Without clean data, we will only exacerbate dirty and inaccurate data for prediction. Dirty in, dirty out.
 
 <details>
 <summary>Suggested answer</summary>
@@ -219,10 +245,20 @@ You build an AI to screen resumes for a tech company. You train it on the compan
 **Discussion:** *(If studying alone, write your answers before opening the suggested responses below.)*
 
 1. Why did the AI do this? Was the AI sexist, or was the *data* sexist?
+- My Answer (27-Apr-2026): From 10 years ago, women equality/empowerment was not as significant as the world today. Therefore, the likelihood on women promotion is way less, therefore excluded when training the model. This also means that for nursing, where female are more prominent in, are auto-excluded.
+
+
 2. Was this a "Data Collection" error or an "Analysis" error?
+- My Answer (27-Apr-2026): If there is no such data present 10 years ago, it would be more of an "analysis" error. Then again, one can argue that if data collected is more recent over the past, 1-3 years, it would be a "Data Collection" error.
+
+
 3. How would you fix this? *(Hint: Can you simply "delete" the gender column? Why might that not be enough?)*
+- My Answer (27-Apr-2026): Would think more recent data should be collected. If this is not plausible, the trained model can perform a separate analysis on women-heavy industries such as nursing, such that gender biasness can be reduced - there should also be nurse promotions as well!
+
 
 **Output:** Write a one-sentence "Warning Label" that should be placed on this dataset before any Data Scientist uses it.
+- My Answer (27-Apr-2026): Data collected in from 10 years ago (2015) where gender equality/women empowerment is almost non-existent.
+  
 
 <details>
 <summary>Sample Warning Label</summary>
@@ -236,6 +272,8 @@ A good warning label names: (1) the time period, (2) the source context, (3) the
 ### 💬 Q&A & Reflection (10 min)
 
 - Can we ever have 100% unbiased data? If not, what can we do?
+   - My Answer (27-Apr-2026): When life has no guarantees, likewise we shouldn't expect data to be 100% unbiased. We can set a label warning like the earlier example, we could widen the scope of data collection, we can split the dataset to reduce biasness (like gender, race, nationalities, industries) and put each analysis altogether for the prediction. Context matters, and timestamps should be recorded as well so users can access the time period for a more accurate context and accuracy.
+     
 
 <details>
 <summary>Suggested answer</summary>
@@ -245,6 +283,8 @@ No — all data is collected by humans or human-built systems, and all collectio
 </details>
 
 - What is the cost — financial and reputational — when an AI system fails in a public-facing application?
+   - My Answer (27-Apr-2026): Trustworthiness drops, and one pays for it.
+
 
 <details>
 <summary>Suggested answer</summary>

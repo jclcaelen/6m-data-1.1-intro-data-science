@@ -51,5 +51,12 @@ Didn't list "skip intro" etc because netflix still asks.
 I feel that this is subjective, and may be related to when phones prompt the user if they would like personalised ads. Personalised ads would likely create this "content bubble" and filter out noises that you may not have been interested. If the algorithm is robust, I do not feel a user would have missed something potentially could have interest him/her. Lastly, there is no roadblock for the user to manually scroll or search for new "ideas".
 
 
+Discord Response (28-Apr-2026):
+
+TLDR of my take on Part 4 Ethics: TLDR: Subjective, depends on situation and perspective.
+
+Rationale: On the free market, certain apps have prompted users if they would like "personalised ads". I would interpret this as informing the app if that "content bubble" is preferred, i.e., pushing/receiving "new" contents based on user data collected and algorithm prediction, and filtering out "noise". If the algorithm is robustly built, user is unlikely to miss out anything, and it is more likely of the business in the losing end if user decides to terminate the service. If the content is of genuine interest or user starts to be curious about, there is nothing hard blocking the user to do a manual search (and becomes new data). Contrary, without personalised option, user has to navigate through the noise and debris, "wasting" time to get to his/her interests, likely before searching it in frustrastion. There is still, room for improvement.
+
+
 ## **💡Please Share Your Answers & Thoughts in Discord💡**
 

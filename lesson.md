@@ -38,23 +38,26 @@ Explain the difference between Data Analytics, Data Science, and Artificial Inte
 **Discussion:**
 
 - "If a CEO says 'I want to build a GPT-4 for my company' but all their data is in paper files, where on the hierarchy are they failing?"
-- My Answer (27-Apr-2026): Data Logging.
+   - My Answer (27-Apr-2026): Data Logging.
+   - Lesson (28-Apr-2026): Collection. Data are not in digital form.
 - "If we scanned those papers into PDFs, would that be enough to build an AI tomorrow? Or is there still a 'Cleaning' and 'Analysis' step missing?"
-- My Answer (27-Apr-2026): After scanning the PDFs, will need to evaluate how data can be extracted, and from these extraction, the SMEs of the business would have to analyse if the data is clean. Even if it is so, the business need to be prepared in future events where data are not read/extracted cleaned - e.g, extraction fails. Specifically on whether "Cleaning" and "Analysis" step is missing - a YES.
+   - My Answer (27-Apr-2026): After scanning the PDFs, will need to evaluate how data can be extracted, and from these extraction, the SMEs of the business would have to analyse if the data is clean. Even if it is so, the business need to be prepared in future events where data are not read/extracted cleaned - e.g, extraction fails. Specifically on whether "Cleaning" and "Analysis" step is missing - a YES.
+   - Lesson (28-Apr-2026): Requires cleaning, labelling etc. Information extracted can be in unstructured form. E.g., invoice scanning. what does the names, format mean.
+is it a refunded invoice, is there GST, service charge?
 
 **Activity:**
 
 1. **The Matrix:** Classify each of the following 5 scenarios as Data Analytics, Data Science, or AI — and explain your reasoning:
    - A bank system that automatically flags unusual transactions in real time
-      - My Answer (27-Apr-2026): More towards AI. This sounds more like an automated action, where research on past data to drive future prediction would have been done, and with iterations to improve the model. Could also be ongoing to make the model more robust.
+      - My Answer (27-Apr-2026): More towards **AI**. This sounds more like an automated action, where research on past data to drive future prediction would have been done, and with iterations to improve the model. Could also be ongoing to make the model more robust.
    - A manager building a monthly pivot table of sales figures
-      - My Answer (27-Apr-2026): Data Analytics - looking back on historical data to generate insights.
+      - My Answer (27-Apr-2026): **Data Analytics** - looking back on historical data to generate insights.
    - A self-driving car that brakes automatically when it detects an obstacle
-      - My Answer (27-Apr-2026): AI. Similar to the bank system above, the car is a "self-driving", an automated action that is already built from past data driving future prediction.
+      - My Answer (27-Apr-2026): **AI**. Similar to the bank system above, the car is a "self-driving", an automated action that is already built from past data driving future prediction.
    - A model that predicts which customers are likely to churn next quarter
-      - My Answer (27-Apr-2026): Data Science. Prediction of the future.
+      - My Answer (27-Apr-2026): **Data Science**. Prediction of the future.
    - A dashboard showing last year's revenue broken down by region
-      - My Answer (27-Apr-2026): Data Analytics - looking back on historical data to generate insights.
+      - My Answer (27-Apr-2026): **Data Analytics** - looking back on historical data to generate insights.
 
 
 
@@ -163,6 +166,9 @@ The app would show a falsely high Sleep Score and report more "Deep Sleep" than 
 
 </details>
 
+- Point raised in class (28-Apr-2026): Incentive Problem. E.g., HPB Smart Tracker. Question on the metrics collected even if data pipeline has no issue. Eventually Heart Rates are taken consideration as well to ensure steps are truly taken. However, still may have other blind spots. Another e.g., cobra incentive.
+  
+
 ### 🛠️ Activity 2: "Data Binning" (20 min)
 
 **Task 1:** Categorise each of the following hospital data items as Structured, Unstructured, or Semi-Structured:
@@ -250,10 +256,12 @@ You build an AI to screen resumes for a tech company. You train it on the compan
 
 2. Was this a "Data Collection" error or an "Analysis" error?
 - My Answer (27-Apr-2026): If there is no such data present 10 years ago, it would be more of an "analysis" error. Then again, one can argue that if data collected is more recent over the past, 1-3 years, it would be a "Data Collection" error.
+- Lesson (28-Apr-2026): Selection Bias, survivorship, also on past 10 years data - Collection problem. Analysis error - did not check for biasness.
 
 
 3. How would you fix this? *(Hint: Can you simply "delete" the gender column? Why might that not be enough?)*
 - My Answer (27-Apr-2026): Would think more recent data should be collected. If this is not plausible, the trained model can perform a separate analysis on women-heavy industries such as nursing, such that gender biasness can be reduced - there should also be nurse promotions as well!
+- Lesson (28-Apr-2026): Proxy variables can continue to affect even if the column is removed. The selection bias also remains.
 
 
 **Output:** Write a one-sentence "Warning Label" that should be placed on this dataset before any Data Scientist uses it.
